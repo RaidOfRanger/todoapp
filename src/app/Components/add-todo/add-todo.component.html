@@ -1,0 +1,10 @@
+<p>add-todo works!</p>
+
+<div>
+    <form (ngSubmit)="addtodo()">
+        <input type="text" placeholder="Title" [(ngModel)]="todo_data.title" name ="title"><br><br>
+        <textarea placeholder="description" [(ngModel)]="todo_data.description" name="description"></textarea><br><br>
+        <input type="file" (change)="getfile($event)"><br><br>
+        <button type="submit">save todo</button>
+    </form>
+</div>
